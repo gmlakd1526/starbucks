@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {width: 400px;
+            height: 500px;
+            border: 1px solid #333;
+            float: left;
+            margin: 20px;
+        }
+        /* 전체 이미지의 크기는 부모 크기에 맞춤 */
+        .img1 img{width: 100%;}
+        /* .img2영역의 이미지는 원래 크기로 */
+        .img2 img {width: initial;}
+        /* .img3영역의 이미지는 부모 영역에 맞춤 - 가로 세로 비율에 따라 이미지가 잘림 */
+        .img3 img {width: 400px; height: 500px; object-fit: fill;}
+    </style>
+</head>
+<body>
+    <div class="img1">
+        <img src="/img/221212_main_story_2.png" alt="">
+    </div>
+
+    <div class="img2">
+        <img src="/img/221212_main_story_2.png" alt="">
+    </div>
+        
+    <div class="img3">
+        <img src="/img/221212_main_story_2.png" alt="">
+    </div>
+</body>
+</html>
